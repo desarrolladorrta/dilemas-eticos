@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f35">
+  <meta name="description" content="Explora dilemas éticos de la práctica docente, contrasta perspectivas y fundamenta tus decisiones pedagógicas.">
+  <title>Dilemas éticos en la práctica docente · CECAR</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="CECAR · inicio"><img src="assets/logo-cecar.png" alt="CECAR, Corporación Universitaria del Caribe" width="574" height="182"></a>
+    <span class="course">Teoría e Historia de la Pedagogía</span>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="sidebar">Recorrido <span aria-hidden="true">☰</span></button>
+  </header>
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar">
+      <p class="sidebar-title">Tu ruta de aprendizaje</p>
+      <nav aria-label="Recorrido del recurso" id="navigation"></nav>
+      <div class="progress-block"><div class="progress-label"><span id="progress-label">Tu avance</span><strong id="progress-text">0 %</strong></div><progress id="progress" aria-labelledby="progress-label" max="100" value="0">0 %</progress><p id="progress-note">Cada actividad cuenta.</p></div>
+      <div class="tools"><button data-dialog="glossary">Glosario <span aria-hidden="true">↗</span></button><button data-dialog="references">Referencias <span aria-hidden="true">↗</span></button><button id="reset">Reiniciar recorrido</button></div>
+      <p class="save-note" id="save-note">Tu avance se guarda en este navegador.</p>
+    </aside>
+    <main id="content" tabindex="-1"></main>
+  </div>
+  <dialog id="resource-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title" tabindex="-1"></h2><button id="close-dialog" class="icon-button" aria-label="Cerrar ventana">×</button></div><div id="dialog-content"></div></dialog>
+  <div class="sr-only" id="announcement" aria-live="polite"></div>
+</body>
+</html>
